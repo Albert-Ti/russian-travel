@@ -3,99 +3,213 @@
 
 
 .page {
-  font-family: inter, Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
-  margin: 0;
+	font-family: inter, Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	background-color: #2A2C2F;
+}
+
+.page__inner {
+	max-width: 1280px;
+	margin: 0 auto;
+	color: #fff;
+
+	padding: 28px 48px 24px;
 }
 
 .content {
-  max-width: 1280px;
-  background-color: #2A2C2F;
-  margin: 0 auto;
-  color: #fff;
-
-  padding: 28px 0 0;
+	display: flex;
+	flex-direction: column;
+	gap: 92px;
 }
 
-/* HEADER */
+/* HEADER++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .header {
-  margin: 0 auto;
-  max-width: 1184px;
+	max-width: 1184px;
 
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .header__lang-link {
-  color: #fff;
-  font-size: 24px;
-  padding: 18px 0 6px 18px;
-  display: inline-block;
-  text-decoration: none;
+	color: #fff;
+	font-size: 24px;
+	padding: 18px 0 6px 18px;
+	display: inline-block;
+	text-decoration: none;
 }
 
 .header__lang-link:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
-/* LEAD */
+/* LEAD+++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .lead {
-  max-width: 984px;
-  margin: 0 auto;
-  padding: 56px 0 0;
+	max-width: 984px;
+	margin: 0 auto;
+	padding: 56px 0 0;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .lead__title {
-  max-width: 720px;
-  text-align: center;
+	max-width: 720px;
+	text-align: center;
 
-  line-height: 100px;
-  font-size: 96px;
-  font-weight: 900;
+	line-height: 100px;
+	font-size: 96px;
+	font-weight: 900;
 
-  margin: 0 0 32px;
+	margin: 0 0 32px;
 }
 
 .lead__subtitle {
-  max-width: 640px;
-  text-align: center;
+	max-width: 640px;
+	text-align: center;
 
-  line-height: 38px;
-  font-size: 30px;
-  font-weight: 400;
+	line-height: 38px;
+	font-size: 30px;
+	font-weight: 400;
 
-  margin: 0 0 64px;
+	margin: 0 0 64px;
 
 }
 
 .lead__figure {
-  position: relative;
-  margin: 0;
+	position: relative;
+	margin: 0;
 }
 
 
 .lead__image {
-  width: 100%;
+	width: 100%;
 }
 
 .lead__vector {
-  width: 90%;
-  position: absolute;
+	width: 90%;
+	position: absolute;
 }
 
 .lead__vector-img {
-  width: 100%;
+	width: 100%;
 }
 
 .lead__caption {
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 14px;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 14px;
 
-  text-transform: uppercase;
+	text-transform: uppercase;
+}
+
+/* INTRO+++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.intro {
+	max-width: 984px;
+	margin: 0 auto;
+}
+
+.intro__inner {
+	max-width: 690px;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.intro__title {
+	font-size: 54px;
+	font-weight: 900;
+}
+
+.intro__text {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 26px;
+}
+
+.intro__list {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+	list-style: none;
+
+	padding: 0;
+}
+
+/* FHOTO-GRID+++++++++++++++++++++++++++++++++++++++++++++++ */
+.photo-grid {
+	width: 100%;
+
+	display: grid;
+	grid-template: 1fr 1fr 1fr/1fr 1fr 1fr 1fr;
+	gap: 10px;
+}
+
+.photo-grid__item {
+	width: 100%;
+}
+
+/* PLACES++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.places {
+	max-width: 984px;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+}
+
+.place {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+	width: 100%;
+
+}
+
+.place__two-row {
+	display: grid;
+	column-gap: 40px;
+	grid-template: 1fr / repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.place__title {
+	font-size: 72px;
+	font-weight: 900;
+	align-self: end;
+	margin: 0;
+}
+
+.place__image {
+	max-width: 100%;
+	object-fit: cover;
+}
+
+.place__website {
+	align-self: end;
+}
+
+.place__url-heading {
+	color: #AAAAAA;
+}
+
+.place__link {
+	color: #fff;
+}
+
+.place__text {}
+
+.place__paragraph {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+
+	margin: 0;
+	padding: 0 0 26px 0;
+}
+
+.place__paragraph:last-child {
+	padding: 0;
 }
