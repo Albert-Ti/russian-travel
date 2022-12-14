@@ -1,0 +1,14 @@
+.cover {
+	width: 100%;
+	margin: 0 auto 92px;
+
+	background-image: url(../../images/cover/cover__background.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+@media screen and (min-width: 1024px) {
+	.cover {
+		width: 92.5%;
+	}
+}
