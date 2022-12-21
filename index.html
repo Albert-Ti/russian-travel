@@ -11,22 +11,19 @@
 
 <body class="page">
 	<header class="header">
-		<img src="./images/header/header__logo.svg" alt="" class="header__logo">
-		<div>
-			<a class="header__lang-link" href="">Ru</a>
-			<a class="header__lang-link" href="">En</a>
-		</div>
+		<img src="./images/header/header__logo.svg" alt="Логотип Россия" class="header__logo">
+		<ul class="header__list">
+			<li><a class="header__lang-link header__lang-link_active" href="#">Ru</a></li>
+			<li><a class="header__lang-link" href="#">En</a></li>
+		</ul>
 	</header>
-	<main class="content">
+	<main>
 		<section class="lead">
-			<h1 class="lead__title">Путешествие по России</h1>
-			<p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
+			<h1 class="lead__title">Путешествия по России</h1>
+			<p class="lead__subtitle">Настоящая страна не&nbsp;в&nbsp;выпусках новостей, а&nbsp;здесь.</p>
 			<figure class="lead__figure">
-				<div class="lead__vector">
-					<img class="lead__vector-img" src="./images/lead/lead-vector.svg" alt="">
-				</div>
-				<img class="lead__image" src="./images/lead/lead-ваша полка.jpg" alt="">
-				<figuration class="lead__caption">ваша полка — верхняя</figuration>
+				<img class="lead__image" src="./images/lead/lead-image.jpg" alt="Вид из вагона поезда">
+				<figcaption class="lead__caption">ваша полка — верхняя</figcaption>
 			</figure>
 
 		</section>
@@ -44,26 +41,27 @@
 				Мы выбрали и описали некоторые интересные места, достойные вашего отпуска.
 			</p>
 			<ul class="intro__list">
-				<li>Часовых поясов 11</li>
-				<li>Объектов природного наследия ЮНЕСКО 12</li>
-				<li>Объектов культурного наследия ЮНЕСКО 16</li>
-				<li>Природных заповедников 105</li>
-				<li>Аэропортов 241</li>
+				<li><span class="intro__list-item">Часовых поясов</span> 11</li>
+				<li><span class="intro__list-item">Объектов природного наследия ЮНЕСКО</span> 12</li>
+				<li><span class="intro__list-item">Объектов культурного наследия ЮНЕСКО</span> 16</li>
+				<li><span class="intro__list-item">Природных заповедников</span> 105</li>
+				<li><span class="intro__list-item">Аэропортов</span> 241</li>
 			</ul>
 		</section>
 		<section class="photo-grid">
-			<img src="./images/photo-grid/photo-grid-arisa.jpg" alt="" class="photo-grid__item">
-			<img src="./images/photo-grid/photo-grid-atharva-tulsi.jpg" alt="" class="photo-grid__item">
-			<img src="./images/photo-grid/photo-grid-baikal-2.jpg" alt="" class="photo-grid__item">
-			<img src="./images/photo-grid/photo-grid-baikal.jpg" alt="" class="photo-grid__item">
-			<img src="./images/photo-grid/photo-grid-elbrus.jpg" alt="" class="photo-grid__item">
-			<img src="./images/photo-grid/photo-grid-ergaki.jpg" alt="" class="photo-grid__item">
-			<img src="./images/photo-grid/photo-grid-kamchatka-1.jpg" alt="" class="photo-grid__item">
-			<img src="./images/photo-grid/photo-grid-kamchatka-2.jpg" alt="" class="photo-grid__item">
-			<img src="./images/photo-grid/photo-grid-kondratiev.jpg" alt="" class="photo-grid__item">
-			<img src="./images/photo-grid/photo-grid-sochi.jpg" alt="" class="photo-grid__item">
-			<img src="./images/photo-grid/photo-grid-train.jpg" alt="" class="photo-grid__item">
-			<img src="./images/photo-grid/photo-grid-tuman.jpg" alt="" class="photo-grid__item">
+			<img src="./images/photo-grid/photo-grid-train.jpg" alt="Вид на природу из поезда" class="photo-grid__item">
+			<img src="./images/photo-grid/photo-grid-atharva-tulsi.jpg" alt="Снежные горы" class="photo-grid__item">
+			<img src="./images/photo-grid/photo-grid-tuman.jpg" alt="Равнины России" class="photo-grid__item">
+			<img src="./images/photo-grid/photo-grid-sochi.jpg" alt="Горные места сочи" class="photo-grid__item">
+			<img src="./images/photo-grid/photo-grid-arisa.jpg" alt="Машина на льду" class="photo-grid__item">
+			<img src="./images/photo-grid/photo-grid-baikal.jpg" alt="Байкал" class="photo-grid__item">
+			<img src="./images/photo-grid/photo-grid-elbrus.jpg" alt="Гора Эльбрус" class="photo-grid__item">
+			<img src="./images/photo-grid/photo-grid-kondratiev.jpg" alt="Знак Пешехода" class="photo-grid__item">
+			<img src="./images/photo-grid/photo-grid-kamchatka-1.jpg" alt="Камчатка" class="photo-grid__item">
+			<img src="./images/photo-grid/photo-grid-kamchatka-2.jpg" alt="Камчатка" class="photo-grid__item">
+			<img src="./images/photo-grid/photo-grid-baikal-2.jpg" alt="Байкал" class="photo-grid__item">
+			<img src="./images/photo-grid/photo-grid-ergaki.jpg" alt="Эргаки-горный хребет в России"
+				class="photo-grid__item">
 		</section>
 		<section class="places">
 			<article class="place">
@@ -76,7 +74,7 @@
 				</div>
 
 				<div class="place__row">
-					<img class="place__image" src="./images/places/place-kosa.jpg" alt="">
+					<img class="place__image" src="./images/places/place-kosa.jpg" alt="Куршская Коса">
 					<div class="place__text">
 						<p class="place__paragraph">Здесь, посреди лесов и песчаных дюн, вы сможете увидеть два водных
 							горизонта — спокойного
@@ -101,7 +99,7 @@
 				</div>
 
 				<div class="place__row">
-					<img class="place__image" src="./images/places/place-kolsky.jpg" alt="">
+					<img class="place__image" src="./images/places/place-kolsky.jpg" alt="Кольский">
 					<div class="place__text">
 						<p class="place__paragraph">Почти весь полуостров находится за Полярным кругом. Саамская тундра, от
 							которой на юг —
@@ -125,7 +123,7 @@
 				</div>
 
 				<div class="place__row">
-					<img class="place__image" src="./images/places/place-altai.jpg" alt="">
+					<img class="place__image" src="./images/places/place-altai.jpg" alt="Алтай">
 					<div class="place__text">
 						<p class="place__paragraph">Алтай — одно из красивейших мест в России.
 							В первую очередь из-за гор: если ехать вдоль хребта, вы увидите склоны, усыпанные соснами,
@@ -147,7 +145,7 @@
 				</div>
 
 				<div class="place__row">
-					<img class="place__image" src="./images/places/place-winter-baikal.jpg" alt="">
+					<img class="place__image" src="./images/places/place-winter-baikal.jpg" alt="Зимний Байкал">
 					<div class="place__text">
 						<p class="place__paragraph">Всем известен Байкал как крупнейшее озеро
 							в мире. Многие также знают, что это самый большой источник пресной воды и одно из красивейших
@@ -169,7 +167,7 @@
 				</div>
 
 				<div class="place__row">
-					<img class="place__image" src="./images/places/place-karelia.jpg" alt="">
+					<img class="place__image" src="./images/places/place-karelia.jpg" alt="Карелия">
 					<div class="place__text">
 						<p class="place__paragraph">Сибирь заканчивается не на Урале, а в Карелии: образующая тайгу
 							сибирская лиственница не растёт западнее Водлозера. Зато здесь она вымахивает на 30 метров —
@@ -182,11 +180,12 @@
 				</div>
 			</article>
 		</section>
+
 		<section class="cover">
 			<a href="https://stampsy.com/na-elektrichkakh-do-baikala" class="cover__link" target="_blank">
-				<h3 class="cover__title">До Байкала «на собаках»</h3>
-				<p class="cover__subtitle">По мотивам учебной темы о Транссибе — путешествие от столицы до Байкала на
-					электричках.</p>
+				<h3 class="cover__title">До&nbsp;Байкала &laquo;на&nbsp;собаках&raquo;</h3>
+				<p class="cover__subtitle">По&nbsp;мотивам учебной темы о&nbsp;Транссибе&nbsp;&mdash; путешествие
+					от&nbsp;столицы до&nbsp;Байкала на&nbsp;электричках.</p>
 			</a>
 		</section>
 	</main>
@@ -200,7 +199,7 @@
 				<li><a class="footer__link" href="https://travel.yandex.ru" target="_blank">Путешествия</a></li>
 			</ul>
 		</nav>
-		<p class="footer__copyrigth">© 2022. Альберт Тайгибов</p>
+		<p class="footer__copyright">© 2022. Альберт Тайгибов</p>
 	</footer>
 </body>
 

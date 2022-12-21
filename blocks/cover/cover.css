@@ -7,8 +7,20 @@
 	background-position: center;
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1184px) {
 	.cover {
 		width: 92.5%;
+	}
+}
+
+@media (max-width: 770px) {
+	.cover {
+		margin-bottom: 88px;
+	}
+}
+
+@media (max-width: 400px) {
+	.cover {
+		margin-bottom: 63px;
 	}
 }

@@ -10,9 +10,27 @@
 	justify-content: center;
 	align-items: center;
 	padding: 20.7% 0 20.7%;
-	margin: 0;
+}
+
+@media (max-width: 1024px) {
+	.cover__link {
+		padding: 19.02% 0 19.02%;
+	}
+}
+
+@media (max-width: 768px) {
+	.cover__link {
+		padding: 14.95% 0 14.95%;
+	}
+}
+
+@media (max-width: 320px) {
+	.cover__link {
+		padding: 10.15% 0 10.15%;
+	}
 }
 
 .cover__link:hover {
 	background-color: rgba(42, 44, 47, .8);
+	transition: all 0.1s linear;
 }
